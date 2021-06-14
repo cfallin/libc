@@ -127,6 +127,10 @@ s_no_extra_traits! {
         __reserved: [::c_char; 36],
     }
 
+    pub struct pthread_spinlock_t {
+        __private: i64,
+    }
+
     pub struct sigset64_t {
         __bits: [::c_ulong; 1]
     }
